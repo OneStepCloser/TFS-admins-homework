@@ -1,0 +1,9 @@
+#!/bin/bash
+target="httpd"
+if pidof $target >/dev/null
+then
+echo "The process $target Exists"
+else
+exec ~/TFS-admins-homework/materials/class03/src/tinyhttpd/tinyhttpd >/dev/null & echo `date` $target was not running, starting... > /root/httpd_start.log
+fi
+
