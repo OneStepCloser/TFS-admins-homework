@@ -4,6 +4,6 @@ if pidof $target >/dev/null
 then
 echo "The process $target Exists"
 else
-exec /home/user09/TFS-admins-homework/materials/class03/src/tinyhttpd/tinyhttpd/httpd & echo `date` $target was not running, starting... > /httpd_start.log
+exec /home/user09/TFS-admins-homework/materials/class03/src/tinyhttpd/tinyhttpd/httpd & echo `date` $target was not running, starting... >> /httpd_start.log
 fi
 
